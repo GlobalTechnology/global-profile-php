@@ -161,7 +161,7 @@
 										ng-model="profile.language[0]"
 										ng-required="isRequired( 'language1' )"
 										ng-options="lang.iso_code as lang.native_name for lang in languages | orderBy:'native_name'">
-										<option value="">Select Language (Required)</option>
+										<option value="" translate>Select Language (Required)</option>
 								</select>
 							</div>
 
@@ -180,7 +180,7 @@
 										name="language2"
 										ng-model="profile.language[1]"
 										ng-options="lang.iso_code as lang.native_name for lang in languages | orderBy:'native_name'">
-										<option value="">No Language (Optional)</option>
+										<option value="" translate>No Language (Optional)</option>
 								</select>
 							</div>
 
@@ -199,7 +199,7 @@
 										name="language3"
 										ng-model="profile.language[2]"
 										ng-options="lang.iso_code as lang.native_name for lang in languages | orderBy:'native_name'">
-										<option value="">No Language (Optional)</option>
+										<option value="" translate>No Language (Optional)</option>
 								</select>
 							</div>
 
