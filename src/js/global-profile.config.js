@@ -1,8 +1,9 @@
 (function ( module ) {
 	'use strict';
 
-	module.config( function ( $locationProvider ) {
+	module.config( function ( $locationProvider, $qProvider ) {
 		$locationProvider.html5Mode( true );
+		$qProvider.errorOnUnhandledRejections(false);
 	} );
 
 	// Initialize Application Settings
